@@ -1,0 +1,10 @@
+window.syntaxHighlighter=null
+require.js('https://cdn.rawgit.com/anliting/syntaxhighlighter/2744b85060163b4bd3f3778a5ebbc04e306338ab/highlighter.js',()=>{
+    blog.addEventListener(
+        'pageContentLoad',div=>{
+            syntaxHighlighter.highlight_all(div,()=>{
+                syntaxHighlighter.border_all(div)
+            })
+        }
+    )
+})
