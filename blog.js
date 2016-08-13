@@ -1,5 +1,5 @@
-window.syntaxHighlighter=null
-require.js('https://cdn.rawgit.com/anliting/syntaxhighlighter/2744b85060163b4bd3f3778a5ebbc04e306338ab/highlighter.js',()=>{
+syntaxHighlighter=null
+module.scriptByPath('https://cdn.rawgit.com/anliting/syntaxhighlighter/2744b85060163b4bd3f3778a5ebbc04e306338ab/highlighter.js').then(()=>{
     blog.addEventListener(
         'pageContentLoad',div=>{
             syntaxHighlighter.highlight_all(div,()=>{
