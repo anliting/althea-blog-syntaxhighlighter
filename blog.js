@@ -1,4 +1,4 @@
-let url='https://cdn.rawgit.com/anliting/syntaxhighlighter/75a6a98a4775d7f6f52c9d685ed0ddff6e757575/src/highlighter.js'
+let url='https://cdn.rawgit.com/anliting/syntaxhighlighter/c777e31b75ed76d9a37b34e3d6808c80678f60cd/src/highlighter.linked.js'
 ;(async()=>{
     let syntaxHighlighter=await module.importByPath(url,{mode:1})
     this.on('pageContentLoad',async div=>{
