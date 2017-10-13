@@ -1,4 +1,4 @@
-let url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/3aadceeb4cb1ea3c7a4d24113e019ec06280e409/src/highlighter.static.mjs'
+let url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/a668f91e4eaadf4c0af503c901e4429ba88417bf/src/highlighter.static.js'
 ;(async()=>{
     let syntaxHighlighter=await module.moduleByPath(url)
     this.on('pageContentLoad',async div=>{
