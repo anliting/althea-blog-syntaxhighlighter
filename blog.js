@@ -1,4 +1,4 @@
-let url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/d3bd2dcc393101cd4ebdfe01ea74e7500157510d/src/highlighter.static.js'
+let url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/9bcbce3132e8c95449857d57506eba7576066e8d/src/highlighter.static.js'
 let syntax
 function getMission(n){
     let
@@ -44,6 +44,6 @@ this.addPagePlugin(async div=>{
                 {innerHTML:''},
                 syntax.typeset(n.innerHTML),
             )
-        n.style.visibility=''
+        n.parentNode.replaceChild(n.firstChild,n)
     })
 })
