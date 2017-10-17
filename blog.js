@@ -35,21 +35,15 @@ this.addPagePlugin(async div=>{
     if(!missions.length)
         return
     let syntax=await loadSyntax()
-    missions.map(o=>{
-        let
-            [n,bordered,highlight]=o,
-            s=n.textContent
+    missions.map(([n,bordered,highlight])=>{
         Object.entries(highlight).filter(([k,v])=>v).forEach(([k])=>{
-            s=syntax.highlight[k](s)
+            n.innerHTML=syntax.highlight[k](n.textContent)
         })
-        if(bordered){
+        if(bordered)
             dom(n,
                 {innerHTML:''},
-                syntax.typeset(s),
+                syntax.typeset(n.innerHTML),
             )
-            n.style.visibility=''
-        }else{
-            n.innerHTML=s
-        }
+        n.style.visibility=''
     })
 })
