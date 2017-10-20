@@ -1,4 +1,4 @@
-import{moduleLoader}from'/lib/core.static.js'
+import{dom,moduleLoader}from'/lib/core.static.js'
 export default async blog=>{
     let module=await moduleLoader()
     let
