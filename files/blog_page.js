@@ -49,6 +49,4 @@ async function plugin(div){
         n.parentNode.replaceChild(n.firstChild,n)
     })
 }
-export default blog=>{
-    blog.addPagePlugin(plugin)
-}
+export default plugin
