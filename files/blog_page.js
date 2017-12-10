@@ -1,4 +1,4 @@
-import{dom,load}from'/lib/core.static.js'
+import{dom}from'/lib/core.static.js'
 let
     url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/7bc8f312e4b65dcd9e07709a9768031dede48cc4/src/highlighter.static.js',
     syntax
@@ -13,8 +13,7 @@ function getMission(n){
 function loadSyntax(){
     if(!syntax)
         syntax=(async()=>{
-            let module=await load.module()
-            syntax=await module.moduleByPath(url)
+            syntax=(await import(url)).default
         })()
     return syntax
 }
