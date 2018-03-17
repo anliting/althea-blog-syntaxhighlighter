@@ -1,6 +1,6 @@
 import{dom}from'/lib/core.static.js'
 let
-    url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/7bc8f312e4b65dcd9e07709a9768031dede48cc4/src/highlighter.static.js',
+    url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/36345cda03778876fa39c25946e0c06e4fdd49a1/src/highlighter.static.js',
     syntax
 function getMission(n){
     return[n.classList.contains('bordered'),{
