@@ -1,4 +1,4 @@
-import{dom}from'/lib/core.static.js'
+import{doe}from'/lib/core.static.js'
 let
     url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/36345cda03778876fa39c25946e0c06e4fdd49a1/src/highlighter.static.js',
     syntax
@@ -41,7 +41,7 @@ async function plugin(div){
             n.innerHTML=syntax.highlight[k](n.textContent)
         })
         if(bordered)
-            dom(n,
+            doe(n,
                 {innerHTML:''},
                 syntax.typeset(n.innerHTML),
             )
