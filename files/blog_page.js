@@ -1,6 +1,6 @@
 import{doe}from'/lib/core.static.js'
 let
-    url='https://gitcdn.link/cdn/anliting/syntaxhighlighter/36345cda03778876fa39c25946e0c06e4fdd49a1/src/highlighter.static.js',
+    url='https://gitcdn.link/repo/anliting/syntaxhighlighter/97425a4cd1c580cdb45bed8d85dbd4592c604eab/main/highlighter.static.mjs',
     syntax
 function getMission(n){
     return[n.classList.contains('bordered'),{
