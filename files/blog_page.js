@@ -11,7 +11,9 @@ function getMission(n){
 function loadSyntax(){
     if(!syntax)
         syntax=(async()=>{
-            syntax=(await import('./wcv.mjs')).default
+            let wcv=(await import('./wcv.mjs')).default
+            doe.head(doe.style(wcv.style))
+            syntax=wcv
         })()
     return syntax
 }
