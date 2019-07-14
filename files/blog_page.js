@@ -1,7 +1,5 @@
 import{doe}from'/lib/core.static.js'
-let
-    url='https://gitcdn.link/repo/anliting/syntaxhighlighter/97425a4cd1c580cdb45bed8d85dbd4592c604eab/main/highlighter.static.mjs',
-    syntax
+let syntax
 function getMission(n){
     return[n.classList.contains('bordered'),{
         cpp:    n.classList.contains('highlighted_cpp'),
@@ -13,7 +11,7 @@ function getMission(n){
 function loadSyntax(){
     if(!syntax)
         syntax=(async()=>{
-            syntax=(await import(url)).default
+            syntax=(await import('./wcv.mjs')).default
         })()
     return syntax
 }
